@@ -5,7 +5,7 @@ body {
     padding: 0;
     /* background-color: #f1f1f1; */
     /* background-color: #2C2E43; */
-    color: #fff !important;
+    /* color: #fff !important; */
     /* overflow-x: hidden; */
     font-family: 'Montserrat', sans-serif;
     
@@ -16,14 +16,20 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 0;
 }
 
+/* header */
+
+header {
+    background-color: #3D9167;
+}
+
 /* NAVBAR */
 nav {
+    width: 100%;
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: space-around;
-    background-color: #2C2E43;
-
+    
 }
 
 
@@ -38,13 +44,18 @@ nav ul {
 }
 
 nav ul li a{
-    color: #fff;
     font-size: 15px;
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: rgb(15, 9, 9);
+    border-bottom: #000 3px solid;
+    color: rgb(209, 209, 209);
   
+}
+
+nav .logo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
 }
 
 /* MENU TOGGLE NAVBAR */
@@ -100,32 +111,20 @@ nav ul li a:hover{
 /* SECTION TWO */
 
 .section-one {
-    display: flex;
-    justify-content: center;
-    color: #000;
-    background-color: #FCFDFF;
-    padding: 50px 0px ;
+    color: rgb(22, 33, 121);
+    text-align: center;
 }
 .section-one .row{
     display: flex;
-    width: 90%;
+    width: 100%;
     
 }
-.section-one .col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    font-size: 30px;
-}
+.section-one .col:nth-child(2)
 
 
-.section-one .row:nth-child(1){
-    align-items: center;
-}
-.section-one .col img {
-    max-width: 100%;
-}
+
+
+
 /* BUTTON FOR SECTION  */
 button {
     background-color:#FFD523 ;
@@ -325,6 +324,7 @@ footer .row .col ul {
     nav ul {
         width: 60%;
     }
+
     .section-one .col{
         font-size: 25px;
         width: 70%;
@@ -357,6 +357,9 @@ footer .row .col ul {
 }
 @media screen and (max-width:730px){
 
+    .section-one {
+        padding: 100px 0px;
+    }
     .section-one .col{
         font-size: 25px;
         width: 70%;
@@ -461,6 +464,11 @@ footer .row .col ul {
          transform: translateY(0);
         }
 
+    .section-one {
+        margin: 0;
+        padding: 0;
+    }
+
         
     .section-one .row{
         display: flex;
@@ -471,7 +479,7 @@ footer .row .col ul {
         margin: 0px;
     }
     .section-one .col{
-        font-size: 20px;
+        font-size: 30px;
         width: 90%;
     }
     .section-one .col img{
