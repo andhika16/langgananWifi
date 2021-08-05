@@ -167,29 +167,28 @@ nav .logo {
     justify-content: center;
 }
 .section-two .row {
-    width: 95%;
+    width: 80%;
     text-align: center;
 }
 
 .section-two .row .col {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     border-radius: 10px;
     padding: 20px;
+    justify-content: center;
     margin-bottom: 30px;
-
+    background-color: #f1f1f1;
 }
 
-.section-two .row .col .title {
-    font-size: 20px;
+.section-two .row .title {
+    font-size: 40px;
+    margin: 20px;
 }
 
-.section-two .row .card{
-    border: 1px rgb(121, 119, 119) solid;
+.section-two .row .col .card{
     border-radius: 5px;
-    max-width: 200px;
-    max-height: 250px;
+    max-width: 15%;
     margin: 10px;
     overflow: hidden;
 }
@@ -359,6 +358,8 @@ footer .row .col ul {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+   
     .section-three .row {
         display: flex;
         flex-wrap: wrap;
@@ -514,12 +515,16 @@ footer .row .col ul {
 
     .section-two .row {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
     .section-two .row .col {
-        width: 80%;
+        width: 90%;
     }
+
+    .section-two .row .col .card {
+        max-width: 25%;
+    }
+
     .section-three .row {
         display: flex;
         flex-direction: column;
